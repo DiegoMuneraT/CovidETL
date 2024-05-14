@@ -1,0 +1,25 @@
+[2024-05-03T22:44:44.246+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.extract_data scheduled__2024-05-02T22:44:30.677873+00:00 [queued]>
+[2024-05-03T22:44:44.476+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.extract_data scheduled__2024-05-02T22:44:30.677873+00:00 [queued]>
+[2024-05-03T22:44:44.507+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-03T22:44:44.511+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2024-05-03T22:44:44.515+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-03T22:44:44.918+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): extract_data> on 2024-05-02 22:44:30.677873+00:00
+[2024-05-03T22:44:45.265+0000] {standard_task_runner.py:55} INFO - Started process 1853 to run task
+[2024-05-03T22:44:45.402+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'covid_analytics_dag', 'extract_data', 'scheduled__2024-05-02T22:44:30.677873+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/covid_analytics.py', '--cfg-path', '/tmp/tmp52bru6h8']
+[2024-05-03T22:44:45.432+0000] {standard_task_runner.py:83} INFO - Job 69: Subtask extract_data
+[2024-05-03T22:44:45.835+0000] {task_command.py:376} INFO - Running <TaskInstance: covid_analytics_dag.extract_data scheduled__2024-05-02T22:44:30.677873+00:00 [running]> on host 2cb8e808f114
+[2024-05-03T22:44:46.149+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Diego Munera
+AIRFLOW_CTX_DAG_ID=covid_analytics_dag
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-02T22:44:30.677873+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-02T22:44:30.677873+00:00
+[2024-05-03T22:44:46.231+0000] {credentials.py:1180} INFO - Found credentials in environment variables.
+[2024-05-03T22:44:48.232+0000] {logging_mixin.py:120} INFO - {'ResponseMetadata': {'RequestId': 'bb3b074b-cbc5-4817-9685-0d0878966b45', 'HTTPStatusCode': 200, 'HTTPHeaders': {'date': 'Fri, 03 May 2024 22:44:47 GMT', 'content-type': 'application/json', 'content-length': '114', 'connection': 'keep-alive', 'x-amzn-requestid': 'bb3b074b-cbc5-4817-9685-0d0878966b45', 'x-amzn-remapped-content-length': '0', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'root=1-663568de-4c76983e0f1d5c285962ccf4;parent=7e6217b3cd4a13e8;sampled=0;lineage=0b9b4e04:0'}, 'RetryAttempts': 0}, 'StatusCode': 200, 'ExecutedVersion': '$LATEST', 'Payload': <botocore.response.StreamingBody object at 0xffff886e5990>} ESTE ES EL RESPONSE++++++++++
+[2024-05-03T22:44:48.247+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-05-03T22:44:48.287+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=covid_analytics_dag, task_id=extract_data, execution_date=20240502T224430, start_date=20240503T224444, end_date=20240503T224448
+[2024-05-03T22:44:48.386+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-05-03T22:44:48.486+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

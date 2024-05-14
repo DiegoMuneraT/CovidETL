@@ -1,0 +1,24 @@
+[2024-05-04T02:45:54.101+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.transform_users scheduled__2024-05-03T00:00:00+00:00 [queued]>
+[2024-05-04T02:45:54.109+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.transform_users scheduled__2024-05-03T00:00:00+00:00 [queued]>
+[2024-05-04T02:45:54.110+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-04T02:45:54.110+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2024-05-04T02:45:54.110+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-04T02:45:54.120+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): transform_users> on 2024-05-03 00:00:00+00:00
+[2024-05-04T02:45:54.126+0000] {standard_task_runner.py:55} INFO - Started process 96 to run task
+[2024-05-04T02:45:54.130+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'transform_users', 'scheduled__2024-05-03T00:00:00+00:00', '--job-id', '89', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpjal231o4']
+[2024-05-04T02:45:54.132+0000] {standard_task_runner.py:83} INFO - Job 89: Subtask transform_users
+[2024-05-04T02:45:54.182+0000] {task_command.py:376} INFO - Running <TaskInstance: user_processing.transform_users scheduled__2024-05-03T00:00:00+00:00 [running]> on host da20c7caeb7d
+[2024-05-04T02:45:54.227+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=transform_users
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-03T00:00:00+00:00
+[2024-05-04T02:45:54.236+0000] {base.py:71} INFO - Using connection ID 'postgres' for task execution.
+[2024-05-04T02:45:54.243+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-05-04T02:45:54.251+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=transform_users, execution_date=20240503T000000, start_date=20240504T024554, end_date=20240504T024554
+[2024-05-04T02:45:54.306+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-05-04T02:45:54.321+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

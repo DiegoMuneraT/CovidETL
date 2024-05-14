@@ -1,0 +1,24 @@
+[2024-05-03T22:52:16.751+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.extract_data manual__2024-05-03T22:52:14.533589+00:00 [queued]>
+[2024-05-03T22:52:16.767+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.extract_data manual__2024-05-03T22:52:14.533589+00:00 [queued]>
+[2024-05-03T22:52:16.767+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-03T22:52:16.768+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2024-05-03T22:52:16.769+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-03T22:52:16.788+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): extract_data> on 2024-05-03 22:52:14.533589+00:00
+[2024-05-03T22:52:16.800+0000] {standard_task_runner.py:55} INFO - Started process 2223 to run task
+[2024-05-03T22:52:16.811+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'covid_analytics_dag', 'extract_data', 'manual__2024-05-03T22:52:14.533589+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/covid_analytics.py', '--cfg-path', '/tmp/tmp5cpsbfcz']
+[2024-05-03T22:52:16.814+0000] {standard_task_runner.py:83} INFO - Job 77: Subtask extract_data
+[2024-05-03T22:52:17.025+0000] {task_command.py:376} INFO - Running <TaskInstance: covid_analytics_dag.extract_data manual__2024-05-03T22:52:14.533589+00:00 [running]> on host 2cb8e808f114
+[2024-05-03T22:52:17.261+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Diego Munera
+AIRFLOW_CTX_DAG_ID=covid_analytics_dag
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-03T22:52:14.533589+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-03T22:52:14.533589+00:00
+[2024-05-03T22:52:17.281+0000] {credentials.py:1180} INFO - Found credentials in environment variables.
+[2024-05-03T22:52:19.592+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-05-03T22:52:19.613+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=covid_analytics_dag, task_id=extract_data, execution_date=20240503T225214, start_date=20240503T225216, end_date=20240503T225219
+[2024-05-03T22:52:19.692+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-05-03T22:52:19.739+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

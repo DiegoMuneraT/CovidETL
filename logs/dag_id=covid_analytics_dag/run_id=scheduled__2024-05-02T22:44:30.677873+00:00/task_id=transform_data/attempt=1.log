@@ -1,0 +1,25 @@
+[2024-05-03T22:44:47.620+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.transform_data scheduled__2024-05-02T22:44:30.677873+00:00 [queued]>
+[2024-05-03T22:44:47.642+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.transform_data scheduled__2024-05-02T22:44:30.677873+00:00 [queued]>
+[2024-05-03T22:44:47.642+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-03T22:44:47.643+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2024-05-03T22:44:47.643+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-03T22:44:47.661+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): transform_data> on 2024-05-02 22:44:30.677873+00:00
+[2024-05-03T22:44:47.685+0000] {standard_task_runner.py:55} INFO - Started process 1856 to run task
+[2024-05-03T22:44:47.701+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'covid_analytics_dag', 'transform_data', 'scheduled__2024-05-02T22:44:30.677873+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/covid_analytics.py', '--cfg-path', '/tmp/tmp_dlwayn0']
+[2024-05-03T22:44:47.702+0000] {standard_task_runner.py:83} INFO - Job 72: Subtask transform_data
+[2024-05-03T22:44:47.795+0000] {task_command.py:376} INFO - Running <TaskInstance: covid_analytics_dag.transform_data scheduled__2024-05-02T22:44:30.677873+00:00 [running]> on host 2cb8e808f114
+[2024-05-03T22:44:47.944+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Diego Munera
+AIRFLOW_CTX_DAG_ID=covid_analytics_dag
+AIRFLOW_CTX_TASK_ID=transform_data
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-02T22:44:30.677873+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-02T22:44:30.677873+00:00
+[2024-05-03T22:44:48.004+0000] {credentials.py:1180} INFO - Found credentials in environment variables.
+[2024-05-03T22:44:48.063+0000] {logging_mixin.py:120} INFO - None ESTE ES EL URL++++++++++
+[2024-05-03T22:44:52.280+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-05-03T22:44:52.488+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=covid_analytics_dag, task_id=transform_data, execution_date=20240502T224430, start_date=20240503T224447, end_date=20240503T224452
+[2024-05-03T22:44:52.618+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-05-03T22:44:52.684+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

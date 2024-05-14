@@ -1,0 +1,24 @@
+[2024-05-02T22:52:34.055+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.invoke_lambda manual__2024-05-02T22:52:31.658240+00:00 [queued]>
+[2024-05-02T22:52:34.074+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: covid_analytics_dag.invoke_lambda manual__2024-05-02T22:52:31.658240+00:00 [queued]>
+[2024-05-02T22:52:34.076+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-02T22:52:34.077+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2024-05-02T22:52:34.078+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-02T22:52:34.092+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): invoke_lambda> on 2024-05-02 22:52:31.658240+00:00
+[2024-05-02T22:52:34.130+0000] {standard_task_runner.py:55} INFO - Started process 770 to run task
+[2024-05-02T22:52:34.140+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'covid_analytics_dag', 'invoke_lambda', 'manual__2024-05-02T22:52:31.658240+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/covid_analytics.py', '--cfg-path', '/tmp/tmpgp1jlzxf']
+[2024-05-02T22:52:34.143+0000] {standard_task_runner.py:83} INFO - Job 54: Subtask invoke_lambda
+[2024-05-02T22:52:34.251+0000] {task_command.py:376} INFO - Running <TaskInstance: covid_analytics_dag.invoke_lambda manual__2024-05-02T22:52:31.658240+00:00 [running]> on host c3fc1e142c14
+[2024-05-02T22:52:34.335+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Diego Munera
+AIRFLOW_CTX_DAG_ID=covid_analytics_dag
+AIRFLOW_CTX_TASK_ID=invoke_lambda
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-02T22:52:31.658240+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-02T22:52:31.658240+00:00
+[2024-05-02T22:52:34.367+0000] {credentials.py:1180} INFO - Found credentials in environment variables.
+[2024-05-02T22:52:37.332+0000] {python.py:177} INFO - Done. Returned value was: None
+[2024-05-02T22:52:37.430+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=covid_analytics_dag, task_id=invoke_lambda, execution_date=20240502T225231, start_date=20240502T225234, end_date=20240502T225237
+[2024-05-02T22:52:37.786+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-05-02T22:52:37.831+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

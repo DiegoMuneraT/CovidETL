@@ -1,0 +1,28 @@
+[2024-05-14T00:00:28.544+0000] {processor.py:154} INFO - Started process (PID=1618) to work on /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:00:28.547+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/covid_analytics.py for tasks to queue
+[2024-05-14T00:00:28.548+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:00:28.548+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:00:28.609+0000] {processor.py:766} INFO - DAG(s) dict_keys(['covid_analytics_dag']) retrieved from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:00:28.640+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:00:28.640+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-14T00:00:28.656+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:00:28.655+0000] {dag.py:3340} INFO - Setting next_dagrun for covid_analytics_dag to 2024-05-13T23:29:33.108383+00:00, run_after=2024-05-14T23:29:33.108383+00:00
+[2024-05-14T00:00:28.665+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/covid_analytics.py took 0.128 seconds
+[2024-05-14T00:00:58.939+0000] {processor.py:154} INFO - Started process (PID=1647) to work on /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:00:58.942+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/covid_analytics.py for tasks to queue
+[2024-05-14T00:00:58.943+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:00:58.943+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:00:59.006+0000] {processor.py:766} INFO - DAG(s) dict_keys(['covid_analytics_dag']) retrieved from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:00:59.036+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:00:59.036+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-14T00:00:59.052+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:00:59.052+0000] {dag.py:3340} INFO - Setting next_dagrun for covid_analytics_dag to 2024-05-13T23:29:33.108383+00:00, run_after=2024-05-14T23:29:33.108383+00:00
+[2024-05-14T00:00:59.062+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/covid_analytics.py took 0.130 seconds
+[2024-05-14T00:01:29.282+0000] {processor.py:154} INFO - Started process (PID=1666) to work on /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:01:29.286+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/covid_analytics.py for tasks to queue
+[2024-05-14T00:01:29.287+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:01:29.287+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:01:29.358+0000] {processor.py:766} INFO - DAG(s) dict_keys(['covid_analytics_dag']) retrieved from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:01:29.389+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:01:29.389+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-14T00:01:29.406+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:01:29.406+0000] {dag.py:3340} INFO - Setting next_dagrun for covid_analytics_dag to 2024-05-13T23:29:33.108383+00:00, run_after=2024-05-14T23:29:33.108383+00:00
+[2024-05-14T00:01:29.416+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/covid_analytics.py took 0.141 seconds
+[2024-05-14T00:01:59.662+0000] {processor.py:154} INFO - Started process (PID=1694) to work on /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:01:59.664+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/covid_analytics.py for tasks to queue
+[2024-05-14T00:01:59.666+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:01:59.666+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:01:59.724+0000] {processor.py:766} INFO - DAG(s) dict_keys(['covid_analytics_dag']) retrieved from /opt/airflow/dags/covid_analytics.py
+[2024-05-14T00:01:59.756+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:01:59.756+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-14T00:01:59.772+0000] {logging_mixin.py:120} INFO - [2024-05-14T00:01:59.772+0000] {dag.py:3340} INFO - Setting next_dagrun for covid_analytics_dag to 2024-05-13T23:29:33.108383+00:00, run_after=2024-05-14T23:29:33.108383+00:00
+[2024-05-14T00:01:59.784+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/covid_analytics.py took 0.129 seconds

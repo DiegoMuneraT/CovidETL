@@ -1,0 +1,26 @@
+[2024-05-04T02:45:49.361+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.extract_user scheduled__2024-05-03T00:00:00+00:00 [queued]>
+[2024-05-04T02:45:49.370+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.extract_user scheduled__2024-05-03T00:00:00+00:00 [queued]>
+[2024-05-04T02:45:49.371+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-04T02:45:49.371+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2024-05-04T02:45:49.371+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-04T02:45:49.380+0000] {taskinstance.py:1383} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2024-05-03 00:00:00+00:00
+[2024-05-04T02:45:49.386+0000] {standard_task_runner.py:55} INFO - Started process 78 to run task
+[2024-05-04T02:45:49.390+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'extract_user', 'scheduled__2024-05-03T00:00:00+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmp4w3kmq1r']
+[2024-05-04T02:45:49.393+0000] {standard_task_runner.py:83} INFO - Job 86: Subtask extract_user
+[2024-05-04T02:45:49.452+0000] {task_command.py:376} INFO - Running <TaskInstance: user_processing.extract_user scheduled__2024-05-03T00:00:00+00:00 [running]> on host da20c7caeb7d
+[2024-05-04T02:45:49.507+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extract_user
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-03T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-03T00:00:00+00:00
+[2024-05-04T02:45:49.509+0000] {http.py:121} INFO - Calling HTTP method
+[2024-05-04T02:45:49.519+0000] {base.py:71} INFO - Using connection ID 'user_api' for task execution.
+[2024-05-04T02:45:49.521+0000] {http.py:148} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2024-05-04T02:45:50.189+0000] {http.py:125} INFO - {"results":[{"gender":"female","name":{"title":"Mrs","first":"Gonca","last":"Erbay"},"location":{"street":{"number":4398,"name":"Mevlana Cd"},"city":"Tunceli","state":"Şanlıurfa","country":"Turkey","postcode":79418,"coordinates":{"latitude":"68.5799","longitude":"63.0499"},"timezone":{"offset":"+3:30","description":"Tehran"}},"email":"gonca.erbay@example.com","login":{"uuid":"75697ecc-c841-4ac0-a6c5-1a892db5c7b4","username":"greenbird701","password":"ronnie","salt":"FpgMVaAA","md5":"f3ae971fe4a8201acbf3da7b17f82047","sha1":"facb5057f0dd4e53c6dc2c0ce0b989177f660a4b","sha256":"7bbb706e3be9aae970f480ba713cf31ff26516f0a9956060f313c43a988d9afa"},"dob":{"date":"1975-07-10T21:07:38.857Z","age":48},"registered":{"date":"2013-09-11T22:49:25.959Z","age":10},"phone":"(873)-747-3746","cell":"(745)-475-5162","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/13.jpg","medium":"https://randomuser.me/api/portraits/med/women/13.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/13.jpg"},"nat":"TR"}],"info":{"seed":"2ddc933da9a772f1","results":1,"page":1,"version":"1.4"}}
+[2024-05-04T02:45:50.223+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extract_user, execution_date=20240503T000000, start_date=20240504T024549, end_date=20240504T024550
+[2024-05-04T02:45:50.276+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2024-05-04T02:45:50.299+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
