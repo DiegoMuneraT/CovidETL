@@ -51,8 +51,6 @@ x-airflow-common:
   environment:
     &airflow-common-env
     # Aqui agregamos nuestras credenciales de amazon, no deberian estar quemadas en el codigo
-    AWS_ACCESS_KEY_ID: #SECRET KEY
-    AWS_SECRET_ACCESS_KEY: #SECRET KEY
     AWS_DEFAULT_REGION: us-east-2
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
